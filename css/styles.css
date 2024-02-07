@@ -70,8 +70,10 @@ p{
 }
 .menu-column ul li :hover{
     text-decoration: none;
-    color: rgba(254,80,0,.9);
+    background-color: rgba(254,80,0,.9);
+    color: #fff;
     padding: 10px;
+    border-radius: 5px;
 }
   
 .button-column {
@@ -94,6 +96,31 @@ p{
 .orange-button:hover {
     background-color: darkorange;
 }
+
 .container-body {
     display: flex;
-}  
+}
+
+.footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 15px;
+    display: flex;
+    background-color: #ebebeb;
+}
+.container-icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconos img{
+    background-color: rgba(254,80,0,.9);
+    border-radius: 50px;
+    padding: 5px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+.copyright p{
+    text-align: center;
+}
