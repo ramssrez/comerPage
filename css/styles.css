@@ -19,7 +19,7 @@ hr{
 }
 p{
     text-align: justify;
-    font-size: 20px;
+    font-size: 15px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -123,4 +123,38 @@ p{
 }
 .copyright p{
     text-align: center;
+}
+.opcion{
+    padding: 8px;
+}
+.container-option{
+    display: flex;
+    padding: 10px;
+}
+.image-description{
+    display: flex;
+}
+.producto-image{
+    height: 100px;
+    width: 100px;
+}
+.column-product{
+    flex: 0.3;
+    padding: 5px;
+}
+.producto-image{
+    width: 150px;
+    height: auto;
+}
+.opcion-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opcion h2{
+    padding: 0 10px;
+}
+.opcion p{
+    padding: 0 10px;
+    font-size: 16px;
 }
