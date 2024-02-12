@@ -104,7 +104,7 @@ p{
 .footer {
     text-align: center;
     margin-top: auto;
-    padding: 15px;
+    padding: 5px;
     display: flex;
     background-color: #ebebeb;
 }
@@ -157,4 +157,48 @@ p{
 .opcion p{
     padding: 0 10px;
     font-size: 16px;
+}
+.image-query{
+    width: 90%;
+    height: auto;
+}
+@media(max-width:1200px){
+    p{
+        text-align: justify;
+        font-size: 10px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h2{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .menu-column ul li a{
+        font-size: 12px;
+    }
+    .image-size{
+        width: 50%;
+        height: auto;
+    }
+    .image-query{
+        width: 80%;
+        height: auto;
+    }
+    .iconos img {
+        width: 15px;
+        height: 15px;
+        padding: 3px;
+    }
+    .orange-button{
+        font-size: 12px;
+    }
+    .opcion p{
+        font-size: 10px;
+    }
+}
+@media(max-width:600px){
+    body{
+        background-color: yellowgreen;
+    }
 }
