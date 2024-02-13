@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 html{
     height: 100%;
@@ -162,6 +163,10 @@ p{
     width: 90%;
     height: auto;
 }
+
+.column-icon{
+    display: none; 
+}
 @media(max-width:1200px){
     p{
         text-align: justify;
@@ -200,5 +205,31 @@ p{
 @media(max-width:600px){
     body{
         background-color: yellowgreen;
+    }
+    p{
+        padding: 0 40px;
+    }
+    .column-icon{
+        display: block; 
+    }
+    .container-body{
+        display: block;        
+    }
+    .image-query{
+        width: 50%;
+        height: auto;
+    }
+    .image-size{
+        width: 80%;
+        height: auto;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+    .footer{
+        display: inline;
+    }
+    .menu-column ul{
+        display: block;
     }
 }
