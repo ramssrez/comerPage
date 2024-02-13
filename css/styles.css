@@ -232,4 +232,13 @@ p{
     .menu-column ul{
         display: block;
     }
+    .container-option{
+        display: block;
+    }
+    .producto-image {
+        width: 70%;
+    }
+    .opcion{
+        margin: auto 10px;
+    }
 }
