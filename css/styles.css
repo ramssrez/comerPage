@@ -103,6 +103,7 @@ p{
 
 .container-body {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer {
@@ -111,6 +112,7 @@ p{
     padding: 5px;
     display: flex;
     background-color: #ebebeb;
+    flex-wrap: wrap;
 }
 .container-icono{
     display: flex;
@@ -170,42 +172,35 @@ p{
 .column-icon{
     display: none; 
 }
-@media(max-width:1200px){
+@media screen and (max-width:1200px){
     p{
-        text-align: justify;
-        font-size: 10px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
-    h2{
-        font-size: 15px;
-    }
-    h3{
-        font-size: 15px;
-    }
-    .menu-column ul li a{
-        font-size: 12px;
+        padding-right: 20px;
     }
     .image-size{
         width: 50%;
         height: auto;
     }
     .image-query{
-        width: 80%;
+        width: 50%;
         height: auto;
-    }
-    .iconos img {
-        width: 15px;
-        height: 15px;
-        padding: 3px;
-    }
-    .orange-button{
-        font-size: 12px;
     }
     .opcion p{
         font-size: 10px;
     }
+    .container-body .column {
+        flex-basis: 50%;
+    }
+    .container-body .column {
+        flex-basis: 50%;
+    }
+    .footer .column{
+        flex-basis: 50%;
+    }
+    .menu-column ul li {
+        margin: 0;
+    }
 }
-@media(max-width:600px){
+@media(max-width:800px){
     p{
         padding: 0 40px;
     }
