@@ -23,7 +23,9 @@ p{
     font-size: 15px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
+h1{
+    text-align: center;
+}
 .container-header {
     display: flex;
 }  
@@ -134,11 +136,17 @@ p{
     padding: 8px;
 }
 .container-option{
-    display: flex;
-    padding: 10px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .image-description{
     display: flex;
+    border: solid rgba(254,80,0,.9) 1px;
 }
 .producto-image{
     height: 100px;
@@ -184,9 +192,6 @@ p{
         width: 50%;
         height: auto;
     }
-    .opcion p{
-        font-size: 10px;
-    }
     .container-body .column {
         flex-basis: 50%;
     }
@@ -198,6 +203,9 @@ p{
     }
     .menu-column ul li {
         margin: 0;
+    }
+    .container-option{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media(max-width:800px){
