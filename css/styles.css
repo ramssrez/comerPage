@@ -209,6 +209,9 @@ h1{
     }
 }
 @media(max-width:800px){
+    .image-description {
+        margin: 10px;
+    }
     p{
         padding: 0 40px;
     }
@@ -241,7 +244,7 @@ h1{
         display: block;
     }
     .producto-image {
-        width: 70%;
+        width: 100%;
     }
     .opcion{
         margin: auto 10px;
