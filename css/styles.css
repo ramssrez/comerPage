@@ -32,7 +32,10 @@ p{
     flex: 1;
     padding: 5px;
 }
-
+.column-change {
+    flex: 1;
+    padding: 5px;
+}
 .image-column {
     text-align: center;
     display: flex;
@@ -203,14 +206,16 @@ p{
     }
 }
 @media(max-width:600px){
-    body{
-        background-color: yellowgreen;
-    }
     p{
         padding: 0 40px;
     }
     .column-icon{
-        display: block; 
+        display: flex; 
+        flex: 1;
+        padding: 10px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
     }
     .container-body{
         display: block;        
@@ -229,9 +234,6 @@ p{
     .footer{
         display: inline;
     }
-    .menu-column ul{
-        display: block;
-    }
     .container-option{
         display: block;
     }
@@ -240,5 +242,36 @@ p{
     }
     .opcion{
         margin: auto 10px;
+    }
+    
+    .menu-column ul{
+        flex-direction: column;
+    }
+    nav{
+        position: absolute;
+        top:50px;
+        left: 0px;
+        background-color: rgb(44, 42, 41, 0.8);
+        width: 100%;
+        padding: 10px;
+    }
+    .menu-column ul li {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .menu-column ul li a {
+        color: #fff;
+    }
+    .menu-icon{
+        width: 25px;
+    }
+    .column-change{
+        flex: 0;
+    }
+    .menu-nav{
+        display: none;
+    }
+    .menu-icon:hover {
+        cursor: pointer;    
     }
 }
